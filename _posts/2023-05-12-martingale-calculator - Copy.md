@@ -1,22 +1,24 @@
----
-layout: post
-title:  "Martingale Calculator"
-date:   2023-05-12 11:11:11 +0800
----
 
 <html>
 <head>
   <title>Martingale Calculator</title>
 </head>
 <body>
-  <input type="number" id="deposit">
+
+<div style="text-align: center">
+  <h2>Deposit</h2>
+  <form>
+    <input type="number" id="deposit" name="deposit" min="1" max="999999999" placeholder="100">
+  </form>
   <button onclick="calculate()">Calculate</button>
-  <div id="roundedNumber1"></div>
-  <div id="roundedNumber2"></div>
-  <div id="roundedNumber3"></div>
-  <div id="roundedNumber4"></div>
-  <div id="roundedNumber5"></div>
-  <div id="roundedNumber6"></div>
+  
+  <div id="roundedNumber1" style="color:red; background-color:powderblue;"></div>
+  <div id="roundedNumber2" style="color:red; background-color:powderblue;"></div>
+  <div id="roundedNumber3" style="color:red; background-color:powderblue;"></div>
+  <div id="roundedNumber4" style="color:red; background-color:powderblue;"></div>
+  <div id="roundedNumber5" style="color:red; background-color:powderblue;"></div>
+  <div id="roundedNumber6" style="color:red; background-color:powderblue;"></div>
+</div>
 </body>
 <script>
 function calculate() {
